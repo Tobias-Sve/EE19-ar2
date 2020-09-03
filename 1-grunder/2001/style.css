@@ -1,0 +1,9 @@
+body {
+    background: #000000 ;
+    background-size: 1000px 1000px;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    width: 500px;
+}

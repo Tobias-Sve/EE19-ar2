@@ -1,0 +1,27 @@
+body {
+    background-color: greenyellow;
+}
+
+h1{
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    color: olive;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    color: olive;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+a {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: forestgreen;
+}
