@@ -1,9 +1,13 @@
 body {
-    background: #000000 ;
+    background-color: #000000 ;
     background-size: 1000px 1000px;
+    background-image: url("./bilder/The_Earth_seen_from_Apollo_17.jpg");
 }
 h1 {
     font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
     color: #ffffff;
-    width: 500px;
+    width: 600px;
+    margin-left: 150px;
+    margin-top: 350px;
 }
