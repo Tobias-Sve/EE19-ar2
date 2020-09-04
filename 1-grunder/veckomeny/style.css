@@ -1,0 +1,32 @@
+body {
+    background-color: crimson;
+}
+
+table {
+    border-spacing: 10px;
+    background-color: tomato;
+}
+
+caption {
+    background-image: url("./bilder/duk.jpg");
+    font-size: 100px;
+    padding: 2%;
+}
+
+tr {
+
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3%;
+}
+
+img {
+
+}
