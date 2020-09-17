@@ -1,0 +1,33 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #111111;
+    font-family: 'Kumbh Sans', sans-serif;
+}   
+
+div {
+    background: url("./bilder/leo-rivas-OR_3rbIv5yI-unsplash.jpg");
+    width: 500px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 50px #ffffff;
+    padding-left: 300px;
+    padding-top: 90px;
+}
+
+h1 {}
+
+h2 {}
+
+p {}
