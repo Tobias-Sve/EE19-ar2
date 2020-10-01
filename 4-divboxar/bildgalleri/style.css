@@ -1,0 +1,67 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Sidans utseende */
+
+body {
+    background: url("./bilder/229-westerlund-21.jpg");
+    color: #eeeeee;
+}
+.kontainer {
+    width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, #15181cec, #23262bec, #31353bec, #41444bec, #51545cec);
+}
+
+/* Sidans utseende */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Monoton', cursive;
+}
+.intro {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Shrikhand', cursive;
+}
+
+/* Bildboxens utseende */
+.picture {
+    background-image: linear-gradient(to right top, #041225, #001634, #001842, #001a51, #011a5e);
+    margin: 50px auto;
+    padding: 50px;
+    width: 800px;
+    border: solid 5px #fffffc;
+    border-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+img {
+    width: 400px;
+    margin: 0px 10px;
+    border: #ffffff solid 5px;
+    border-radius: 5px;
+}
+.leftimg {
+    float: left;
+}
+.rightimg {
+    float: right;
+}
+.rightp {
+    text-align: right;
+}
+hr {
+    visibility: hidden;
+    clear: both;
+}
