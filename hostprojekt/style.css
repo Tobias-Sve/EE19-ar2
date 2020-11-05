@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Backgrund bilder */
+.in {
+ background: url("./bilder/JHS4yT.jpg");
+}
+.bu {
+    background: url("./bilder/Halloween-ghost-seamless-pattern-by-thanaporn.pinp_.jpg");
+}
+.out {
+    background: url("./bilder/ed8452f6c6.jpg");
+}
+.mom {
+    background: url("./bilder/a2f32801-0a75-4ec3-945b-6fe23d6de4a1_ManofMedan_4.jpg");
+}
+.dbd {
+    background: url("./bilder/mme3.png");
+}
+/* Div boxar design */
+.kontainer {
+    width: 1700px;
+    margin: 50px auto;
+}
+.kontainer .scary {
+    width: 500px;
+    margin: 100px auto;
+}
+.kontainer .intro {
+    background: #ff8800;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000000;
+}
+.kontainer .spel .saker {
+    margin: auto;
+    display: grid;
+    grid-template: 1fr / 500px 670px 500px;
+    gap: 10px;
+}
+.kontainer .spel .text {
+    background: #ff8800;
+    width: 630px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000000;
+    border: 4px solid #a75900;
+}
+
+/* Navigator design */
+.meny {
+    background: radial-gradient(circle, rgba(255,136,0,1) 15%, rgba(152,99,0,1) 100%);
+    padding: 30px;
+    width: 800px;
+    margin: 0px auto 30px;
+    border-radius: 10px;
+    border: 6px solid #a75900 ;
+    box-shadow: 0px 0px 10px #000000;
+}
+.meny ul {
+    text-align: center;
+    font-size: 20px;
+}
+.meny ul li {
+    display: inline;
+    margin-left: 10px;
+}
+.meny ul li a{
+    text-decoration: none;
+    color: #000000;
+}   
+.meny ul li a.aktiv{
+    color: #444444;
+}   
+.meny ul li a:hover{
+    color: #555555;
+}
+
+/* Rubriker design */
+.kontainer h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Henny Penny', cursive;
+}
+.kontainer h2 {
+    font-size: 30px;
+    font-family: 'Henny Penny', cursive;
+    background: #ff8800;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.kontainer .spel h2 {
+    box-shadow: 0px 0px 10px #000000;
+    border: 4px solid #a75900
+}
+.kontainer .scary h1 {
+    font-size: 180px;
+    color: #ffffff;
+    font-family: 'Henny Penny', cursive;
+    text-shadow: 0px 0px 19px #000000;
+}
+
+/* Bilder design */
+.kontainer .spel .saker img {
+    width: 490px;
+    box-shadow: 0px 0px 15px #ffffff;
+    border-radius: 10px;
+}
+/* Text design */
+.kontainer p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
