@@ -48,8 +48,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 .kontainer .spel .saker {
     margin: auto;
     display: grid;
-    grid-template: 1fr / 500px 670px 500px;
-    gap: 10px;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 50px;
 }
 .kontainer .spel .text {
     background: #ff8800;
