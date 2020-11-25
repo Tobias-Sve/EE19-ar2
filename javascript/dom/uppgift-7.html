@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mixtra med websidan</h1>
+        <button onclick="nyText()">Ny text</button>
+        <script>
+            function nyText() {
+                console.log("Det funkar");
+                document.title = "Ny Text"
+                //saker
+                document.body.innerHTML = "<h1>Ny text</h1> <button onclick=\"nyFärg()\">Ny färg</button>"
+            }
+            function nyFärg() {
+                document.body.style.cssText = "background: black; color: white;"
+            }
+        </script>
+    </div>
+</body>
+</html>

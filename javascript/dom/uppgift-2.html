@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mixtra med websidan</h1>
+        <button onclick="ljus()">Ljus bakgrund</button>
+        <button onclick="mörk()">Mörk bakgrund</button>
+        <script>
+            function ljus() {
+                console.log("Det funkar");
+
+                //Ändra på titeln
+                document.body.style.cssText = "background: white;"
+            }
+            function mörk() {
+                console.log("Det funkar");
+
+                //Ändra på titeln
+                document.body.style.cssText = "background: black;"
+            }
+        </script>
+    </div>
+</body>
+</html>

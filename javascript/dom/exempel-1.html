@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mixtra med websidan</h1>
+        <button onclick="nyTitel()">Ny titel</button>
+        <button onclick="nyFärg()">Ny Färg</button>
+        <button onclick="boom()">BOOM!</button>
+        <script>
+            function nyTitel() {
+                console.log("Det funkar");
+
+                //Ändra på titeln
+                document.title = "yeet";
+            }
+            function nyFärg() {
+                document.body.style.cssText = "background: red; color: blue;";
+            }
+            function boom() {
+                document.body.innerHTML = "<img src=\"./bilder/boom-e1565810807321.png\" alt=\"Pang\">";
+            }
+        </script>
+    </div>
+</body>
+</html>
