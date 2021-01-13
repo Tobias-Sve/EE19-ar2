@@ -1,0 +1,101 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans utseende */
+body.sida1 {
+    background: url("./bilder/4355196.jpg");
+}
+
+body.sida2 {
+    background: url("./bilder/4383716.jpg");
+}
+
+body.sida3 {
+    background: url("./bilder/500_F_189945743_mrib16sH0YRkNPzSiA84u7A1YBJtosZR.jpg");
+}
+body.sida4 {
+    background: url("./bilder/colorful-underwater-ocean-life-seamless-pattern_1284-39211.jpg");
+}
+body.sida5 {
+    background: url("./bilder/modern-geometric-seamless-pattern_1035-18238.jpg");
+}
+body.sida6 {
+    background: url("./bilder/vintage-green-leaves-seamless-pattern_1284-34451.jpg");
+}
+
+/* Boxens utseende */
+div.box1 {
+    width: 550px;
+    margin: 200px auto;
+    background: white;
+    border: 5px dashed #4400ff ;
+    padding: 50px;
+}
+div.box2 {
+    width: 550px;
+    margin: 200px auto;
+    background: #ff0000;
+    border: 5px dotted #004d0d ;
+    padding: 50px;
+}
+div.box3 {
+    width: 550px;
+    margin: 200px auto;
+    background: #4542ff;
+    border: 5px solid #d9ff00 ;
+    padding: 50px;
+}
+div.box4 {
+    width: 550px;
+    margin: 200px auto;
+    background: #ff00d4;
+    border: 5px double #7cff78 ;
+    padding: 50px;
+}
+div.box5 {
+    width: 550px;
+    margin: 200px auto;
+    background: rgb(61, 161, 179);
+    border: 10px ridge #c93535 ;
+    padding: 50px;
+}
+div.box6 {
+    width: 550px;
+    margin: 200px auto;
+    background: #37865a;
+    border: 5px dashed #a30000 ;
+    padding: 50px;
+}
+
+/* Innehållets utseende */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(28, 107, 255);
+    font-size: 35px;
+
+}
+
+a:hover {
+    color: #1eff00;
+}
+
+p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}

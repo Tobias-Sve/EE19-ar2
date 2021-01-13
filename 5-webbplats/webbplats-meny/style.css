@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans&family=Roboto+Slab&display=swap');
+
+/* CSS HEX */
+:root {
+--navy-blue: #03045eff;
+--dark-cornflower-blue: #023e8aff;
+--star-command-blue: #0077b6ff;
+--blue-green: #0096c7ff;
+--cerulean-crayola: #00b4d8ff;
+--sky-blue-crayola: #48cae4ff;
+--sky-blue-crayola-2: #90e0efff;
+--blizzard-blue: #ade8f4ff;
+--powder-blue: #caf0f8ff;
+}
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -8,4 +22,84 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
+}
+
+/* Sidans utseende */
+body {
+    background: #03045eff;
+}
+.kontainer {
+    background: #023e8aff;
+    width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+/* Sidans rubriker */
+.kontainer h1 { /* Gäller h1 i div.kontainer */
+    font-family: 'Roboto Slab', serif;
+    color: #caf0f8ff;
+    text-align: center;
+    font-size: 70px;
+}
+.kontainer h2 { /* Gäller h2 i div.kontainer */
+    font-family: 'Roboto Slab', serif;
+    color: #caf0f8ff;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Menyns utseende */
+.kontainer ul {
+    list-style-type: none;
+    text-align: center;
+}
+.kontainer ul li {
+    display: inline; /* Horisontell lista */
+    text-align: center;
+
+}
+.kontainer ul a:hover {
+    background: #48cae4ff;
+}
+.kontainer ul a.aktiv {
+    background: #0077b6ff;
+}
+.kontainer ul li a { /* Menyknappar */
+    color:  #caf0f8ff;
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', cursive;
+    background: #0096c7ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/* Bilddelens utseende */
+.kontainer figure {
+    margin: auto;
+    text-align: center;
+    background:  #0077b6ff;
+    width: 350px;
+    padding: 20px;
+}
+.kontainer figure figcaption {
+    font-family: 'Open Sans', sans-serif;
+
+}
+.kontainer figure img {
+    width: 100%;
+}
+/* Sidans text */
+.kontainer p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ade8f4ff;
+    margin-bottom: 20px;
+}
+.kontainer p a {
+    text-decoration: none;
+    color: #fff;
+
+}
+.kontainer p a:hover{
+    color: #0096c7ff;
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interaktivitet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Kul på webbsida</h1>
+        <img onmousewheel="hej()" src="./bilder/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="Earth during the night">
+    </div>
+
+    <script>
+        // Visa en ruta som säger "Hej!""
+        function hej() {
+            alert("Hej på dig!");
+            document.body.style.backgroundColor = "red"
+        }
+    </script>
+</body>
+</html>

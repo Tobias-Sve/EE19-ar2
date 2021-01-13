@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gissa ett tal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="gissaTal()">Gissa talet!</button>
+    </div>
+    <script>
+        //Slumpa fram tal
+        //var slumpTal = Math.random();    //0.0000... -> 0.99999...
+        //var slumpTal = Math.random() * 10;     //00.00 -> 09.9999
+        function gissaTal() {
+            alert("Välkommen till spelet! Ditt tal håller på att slumpas fram...")
+            var slumpTal = Math.floor(Math.random() * 10 + 1);     // 1 -> 
+            var ditTal = prompt("Gissa talet! (1-10)");
+            if (slumpTal == ditTal) {
+                alert("Rätt svar!");
+            } else {
+                alert("Fel svar. Rätt svar var: " + slumpTal)
+            }
+        }
+    </script>
+</body>
+</html>

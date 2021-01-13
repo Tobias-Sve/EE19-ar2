@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Open+Sans&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Formulärets utseende */
+body {
+    background: #1613c9;
+}
+form {
+    background: #4ca836;
+    margin: 30px auto;
+    width: 500px;
+    padding: 30px;
+    border-radius: 5px;
+
+    /* Två kolumner(css grid) */
+    display: grid;
+    grid-template-columns: 110px 200px;
+    gap: 10px;
+}
+form label {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+form input {
+    font-family: 'Cousine', monospace;
+    padding: 5px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+form input[type="radio"], [type="checkbox"]{
+    background: #000000;
+    color: #ffffff;
+}
+form select, textarea {
+    font-family: 'Cousine', monospace;
+    padding: 5px;
+    background: #000000;
+    color: #ffffff;
+}
+form button {
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 75%;
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,97,1) 20%, rgba(2,0,160,1) 40%, rgba(2,0,166,1) 60%, rgba(0,0,97,1) 80%, rgba(2,0,36,1) 100%);
+}
+form button:hover {
+    box-shadow: 0px 0px 20px #ffffff;
+}

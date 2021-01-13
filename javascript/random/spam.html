@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gissa ett tal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="spamCheck()">Gissa talet!</button>
+    </div>
+    <script>
+        //Slumpa fram tal
+        //var slumpTal = Math.random();    //0.0000... -> 0.99999...
+        //var slumpTal = Math.random() * 10;     //00.00 -> 09.9999
+        function spamCheck() {
+            // Slumpa fram tal 1
+            var tal1 = Math.round(Math.random() * 10 + 1);
+            // Slumpa fram tal 2
+            var tal2 = Math.round(Math.random() * 10 + 1);
+            // Räkna ut summan = tal1 + tal2
+            var summa = tal1 + tal2
+            // Be användaren räkna ut summan
+            var svar = prompt("Vad är summan av " + tal1 + " och " + tal2 + "?")
+            // Kolla om det stämmer
+            if (summa == svar) {
+                alert("Grattis! Du är inte en robot!")
+            } else {
+                alert("Inga plåtburkar tillåtna här!")
+            }
+
+        }
+    </script>
+</body>
+</html>

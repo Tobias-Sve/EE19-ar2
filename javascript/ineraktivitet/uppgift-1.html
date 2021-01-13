@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lyssna på klick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Lyssna på klick</h1>
+        <button onclick="adress()">Ange adress</button>
+    </div>
+    <script>
+        function adress() {
+            /* Fråga om adress och gör till variabel */
+            var adress = prompt("Var bor du?");
+
+            /* Visa var de bor */
+            alert("Tjena! Du bor i " + adress)
+
+            /* Logga adressen i consolen */
+            console.log("Du bor i " + adress)
+        }
+    </script>
+
+</body>
+</html>

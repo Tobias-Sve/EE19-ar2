@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onkeydown="tryckte()">
+    <h1>BIld sak mmmaaa</h1>
+    <button onclick="tryckte()">Click to change title</button>
+    
+
+    <script>
+        //Function
+        function tryckte() {
+            var nyTitel = prompt("Vad ska den nya titeln vara?");
+            document.title = nyTitel
+        }
+    </script>
+</body>
+</html>

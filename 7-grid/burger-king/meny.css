@@ -14,7 +14,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Sidhuvudets utseende */
 .sidhuvud {
-
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 30px 30px 0px 0px;
 }
 
 .sidhuvud img {
@@ -24,13 +27,22 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 }
 .sidhuvud li {
-
+    display: inline;
+    margin-left: 40px;
 }
 .sidhuvud li a {
-
+    text-decoration: none;
+    color: #6B3545;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
 }
 .sidhuvud li a:hover {
-
+    color: #B6978A;
+}
+.sidhuvud li a.active {
+    color: #F7A600    ;
 }
 
 /* Rutnätets utseende */
@@ -55,17 +67,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 .rutnat .burgare h1 {
     font-family: 'Anton', sans-serif;
+    margin-top: 130px;
 }
 .rutnat .burgare h2 {
     font-family: 'Allan', cursive;
 }
 .rutnat .burgare img {
-    transition: all 0.2s;
+    transition: all 0.2s ease;
     width: 90%;
 }
 .rutnat .burgare img:hover {
-    width: 100%;
+    transform: scale(1.2);
 }
 .rutnat .burgare p {
     font-family: 'Anton', sans-serif;
+    margin-bottom: 20px;
 }

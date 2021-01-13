@@ -1,0 +1,22 @@
+body {
+    background-image: url(./bilder/What-is-landscape-photography.jpg);
+}
+
+h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+p {
+    font-family: 'Righteous', cursive;
+    margin-left: 45px;
+    width: 350px;
+    border: 2px dotted red;
+    padding: 1%;
+    background-color: rgba(248, 150, 150, 0.7);
+}
+
+img {
+    margin-left: 75%;
+}
