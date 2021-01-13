@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slutbetyg</h1>
+        <button onclick="slutbetyg()">Gissa slutbetyg</button>
+
+        <script>
+            function slutbetyg() {
+                // Slutbetyg: F, E, D, C, B, A
+                //Slumpa fram ett tal
+                var slumpTal = Math.floor(Math.random() * 6);
+                switch (slumpTal) {
+                    case 0:
+                        alert("Du får F 🥶");
+                        break;
+                    case 1:
+                        alert("Du får E 🕵️");
+                        break;
+                    case 2:
+                        alert("Du får D 😩");
+                        break;
+                    case 3:
+                        alert("Du får C 😂");
+                        break;
+                    case 4:
+                        alert("Du får B 😫");
+                        break;
+                    default:
+                        alert("Du får A 🥵");
+                        break;
+                }
+
+            }
+        </script>
+    </div>
+</body>
+</html>

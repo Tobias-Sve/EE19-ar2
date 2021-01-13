@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gissa ett tal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Spam check</h1>
+        <input class="fråga" type="text"><br>
+        <input class="gissning" type="text"><button onclick="gissningCheck()">Gissa!</button><br>
+        <input class="svar" type="text">
+    </div>
+    <script>
+        // Peka ut element vi skall jobba med
+        const elementFråga = document.querySelector(".fråga");
+        const elementGissning = document.querySelector(".gissning");
+        const elementSvar = document.querySelector(".svar");
+
+        console.log(elementFråga);
+        console.log(elementGissning);
+        console.log(elementSvar);
+
+        //Skriv en text i första rutan
+        //elementFråga.value = "Hejejehe´09jhrgåoidfjgj"
+
+        // Ställ en fråga
+        elementFråga.value = "Vad är 11 + 7";
+        function gissningCheck() {
+            var gissning = elementGissning.value
+            switch (gissning) {
+                case "18":
+                    elementSvar.value = "Rätt svar!"
+                    break;
+            
+                default:
+                    elementSvar.value = "Fel svar!"
+                    break;
+            }
+        }
+
+    </script>
+</body>
+</html>
