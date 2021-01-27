@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Reject Humanity</h1>
+        <button onclick="loopa()">Become Monkey</button>
+        <p></p>
+    </div>
+    <script>
+        //Välja element vi ska jobba med
+        const eResultat = document.querySelector("p"); //Valt ut <p></p>
+        //Upprepa koden mycket mmmaaa
+        function loopa() {
+            var varv = 0;
+            while (varv < 18) {
+                eResultat.innerHTML += varv + "<br>";
+                varv++;
+            }
+
+            
+            
+        }
+    </script>
+</body>
+</html>

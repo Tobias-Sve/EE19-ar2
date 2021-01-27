@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lööp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa talet</h1>
+        <button onclick="loopa()">Är du redo?</button>
+    </div>
+    <script>
+
+
+        function loopa() {
+            
+            var randomTal = Math.ceil(Math.random() * 50)
+            console.log("Slumpat tal:", randomTal);
+
+            //variabel för chanser
+            var chanser = 5;
+
+            //Köra en loop
+            while (chanser > 0) {
+                console.log("Antal chanser kvar:", chanser)
+
+                //Är det några chanser kvar?
+                
+                
+                //Användaren gissar
+                var gissning = prompt("Gissa på ett tal (1-50)");
+
+                //Testa för rätt svar
+                if (gissning == randomTal) {
+                    alert("Korrekt! Du är smort");
+                    break;
+                } else {
+                    alert("Dumm dumm försök igen");
+                }
+                chanser -= 1; //Minska antal chanser med 1
+            }
+        }
+    </script>
+</body>
+</html>

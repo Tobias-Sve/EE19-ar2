@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Datum</h1>
+        <button onclick="datum()">Dagens datum och en emoji</button><br>
+        <input class="datum" type="text"><br>
+        <input class="emoji" type="text">
+    </div>
+    <script>
+        const elementDatum = document.querySelector(".datum");
+        const elementEmoji = document.querySelector(".emoji");
+
+        
+        function datum() {
+            elementDatum.value = "Datum: 20/1 - 2021";
+            var randomEmoji = Math.round(Math.random() * 4 + 1)
+            console.log("Numret för emojin är: " + randomEmoji)
+            switch (randomEmoji) {
+                case 1:
+                    var emoji = elementEmoji.value = "😁" 
+                    break;
+            
+                case 2:
+                    var emoji = elementEmoji.value = "😀" 
+                    break;
+            
+                case 3:
+                    var emoji = elementEmoji.value = "😆" 
+                    break;
+            
+                case 4:
+                    var emoji = elementEmoji.value = "🤗" 
+                    break;
+            
+                default:
+                    var emoji = elementEmoji.value = "🤑"
+                    break;
+            }
+        }
+
+    </script>
+</body>
+</html>

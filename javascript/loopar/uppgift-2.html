@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 2</h1>
+        <button onclick="heltal()">Fråge dags</button>
+    </div>
+    <script>
+        
+        function heltal() { 
+            var mindreHeltal = prompt("Mata in ett tal");
+            var störreHeltal = prompt("Mata in ett större tal");
+            while (mindreHeltal <= störreHeltal) {
+                console.log(mindreHeltal)
+                mindreHeltal++;
+                
+            }
+
+
+        }
+    </script>
+</body>
+</html>

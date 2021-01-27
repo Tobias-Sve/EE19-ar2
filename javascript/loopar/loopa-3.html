@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lööp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa talet</h1>
+        <button onclick="loopa()">Är du redo?</button>
+    </div>
+    <script>
+
+
+        function loopa() {
+
+            //variabel för chanser
+            var varv = 5;
+
+            //Köra en loop som loopar så länge man har chanser kvar
+            while (varv <15) {
+                varv += 1;
+                console.log("Antal varv:", varv)
+            }
+            console.log("Done")
+        }
+    </script>
+</body>
+</html>
