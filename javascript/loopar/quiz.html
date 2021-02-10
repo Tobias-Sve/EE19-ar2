@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Quiz dags!</h1>
+        <button onclick="quiz()">Är du redo?</button>
+    </div>
+    <script>
+
+        function quiz() {
+            
+            var antal = 0;
+            var poäng = 0;
+            while (antal < 5) {
+                var tal1 = Math.ceil(Math.random() *  100);  
+                console.log("Slumptal:" + tal1);
+                var svar = 100 - tal1;
+                console.log("Svaret är:" + svar);
+                var fråga = prompt("Vad är " + tal1 + " - 100?");
+                if (fråga == svar) {
+                    alert("Bra! Nästa fråga");
+                    poäng++;
+                } else {
+                    alert("Fel svar! Nästa fråga");
+                }
+                antal++;
+                console.log("Du har " + poäng + " poäng");
+            }
+            alert("Du fick " + poäng + " poäng! Grattis!");
+        }
+    </script>
+</body>
+</html>
