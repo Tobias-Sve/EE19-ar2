@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Får du köpa bira?</h1>
+        <button onclick="dinÅlder()">Ange ålder</button>
+
+        <script>
+            function dinÅlder() {
+                var ålder = prompt("Vad är lösenordet?");
+                //Om ålder är 20 eller över, till systemet
+                if (ålder >= 20) {
+                    //Om ålder är 20 eller mer
+                    alert("Drick dags");
+                    document.body.style.cssText = "background: lime;";
+                    window.location.href = "https://www.systembolaget.se/"
+                } else {
+                    //Om ålder är mindre än 20 
+                    alert("Aj aj");
+                    document.body.style.cssText = "background: red;";
+                    window.location.href = "https://www.lekia.se/"
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

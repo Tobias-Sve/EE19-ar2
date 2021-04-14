@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Är du robbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Är du riktig eller inte</h1>
+        <h2>Input</h2>
+        <label>Vad är Sveriges huvudstad? <input class="gissning" type="text"></label>
+        <button onclick="stad()">Skicka</button>
+
+        <h2>Output</h2>
+        <label>Svar: <input class="svar" type="text"></label>
+
+    </div>
+    <script>
+        const eInputStad = document.querySelector(".gissning");
+        const eInputSvar = document.querySelector(".svar");
+        function stad() {
+            var gissning = eInputStad.value
+
+            if (gissning == "Stockholm") {
+                eInputSvar.value = "Du har rätt! Här är nummer: 777777777777777"
+            } else {
+                eInputSvar.value = "Lmao nörd robot LLLLLLLLLLL"
+            }
+        }
+    </script>
+</body>
+</html>

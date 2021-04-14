@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Tips på saker att göra</h1>
+        <button onclick="veckoDag()">Ange veckodag</button>
+
+        <script>
+            function veckoDag() {
+                var dag = prompt("Vad är lösenordet?");
+                //Om det är fredag, skickas till coop med chips
+                if (dag == "fredag") {
+                    //Om ålder är 20 eller mer
+                    window.location.href = "https://www.coop.se/globalt-sok/?query=olw%20chips"
+                } else if (dag == "lördag") {
+                    //Om det är lördag, skicka till netflix
+                    window.location.href = "https://www.netflix.com/se-en/"
+                } else if (dag == "söndag") {
+                    //Om det är söndag, skicka till IKEA
+                    window.location.href = "https://www.ikea.com/se/sv/stores/restaurant/"
+                } else if (dag == "måndag") {
+                    //Om det är måndag, skicka till 1-800
+                    window.location.href = "https://www.br.dk/"
+                }
+
+            }
+        </script>
+    </div>
+</body>
+</html>

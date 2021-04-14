@@ -17,7 +17,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    margin: 30px 30px 0px 0px;
+    margin: 3   0px 30px 0px 0px;
 }
 
 .sidhuvud img {
@@ -50,7 +50,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* #FEF1E5 Ljus */ /* Mörk #EFDAC5 */
 .rutnat {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr ;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
 .ljus {
     background: #fef1e5;
