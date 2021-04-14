@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Inloggning</h1>
+        <button onclick="lösenord()">Ange lösenord</button>
+
+        <script>
+            function lösenord() {
+                var lösen = prompt("Vad är lösenordet?");
+                
+                
+                if (lösen == "1234") {
+                    //Om lösen är rätt
+                    alert("Bra jobb");
+                    document.body.style.cssText = "background: lime;";
+                    window.location.href = "https://tetris.com/play-tetris/?utm_source=top_nav_link&utm_medium=webnav&utm_campaign=playNow_btm_tst&utm_content=text_play_now"
+                } else {
+                    //Om lösen är fel
+                    alert("Fel lösenord");
+                    document.body.style.cssText = "background: red;";
+                    window.location.href = "https://giphy.com/gifs/spongebob-l46CyJmS9KUbokzsI/fullscreen"
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
