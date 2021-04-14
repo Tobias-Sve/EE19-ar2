@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas>
+
+    </canvas>
+    <script>
+        //hitta canvas elementet
+        const canvas = document.querySelector("canvas");
+
+        // Gör canvas större
+        canvas.width = 800;
+        canvas.height = 700;
+
+        // Slå på ritmotorn
+        var ctx = canvas.getContext("2d");
+
+        /*         //Rita rektangel
+                ctx.fillRect(50, 50, 100, 60);
+        
+                //Rita en röd fyrkant
+                ctx.fillStyle = "red";
+                ctx.fillRect(100, 90, 200, 200);
+        
+                //Rita en grön fyrkant
+                ctx.fillStyle = "green";
+                ctx.fillRect(300, 600, 90, 100); */
+
+        //Rita 4 fyrkanter på varandra i olika färger
+        ctx.fillStyle = "purple";
+        ctx.fillRect(400, 200, 200, 100)
+        ctx.fillStyle = "green";
+        ctx.fillRect(400, 300, 200, 100)
+        ctx.fillStyle = "cyan";
+        ctx.fillRect(400, 400, 200, 100)
+        ctx.fillStyle = "red";
+        ctx.fillRect(400, 500, 200, 100)
+
+        //Rita rutmönster
+        ctx.fillStyle = "red";
+        ctx.fillRect(40, 300, 50, 50);
+        ctx.fillStyle = "green"
+        ctx.fillRect(90, 300, 50, 50);
+        ctx.fillStyle = "red";
+        ctx.fillRect(140, 300, 50, 50);
+        ctx.fillStyle = "green"
+        ctx.fillRect(40, 350, 50, 50);
+        ctx.fillStyle = "red";
+        ctx.fillRect(90, 350, 50, 50);
+        ctx.fillStyle = "green"
+        ctx.fillRect(140, 350, 50, 50);
+
+        //Rita svenska flaggan
+        //Blåa delarna
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 100, 80)
+        ctx.fillRect(20, 140, 100, 80)
+        ctx.fillRect(160, 20, 200, 80)
+        ctx.fillRect(160, 140, 200, 80)
+        //Gula delarna
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(20, 100, 340, 40)
+        ctx.fillRect(120, 20, 40, 200)
+
+    </script>
+</body>
+</html>
