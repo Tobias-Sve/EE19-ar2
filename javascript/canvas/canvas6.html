@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skriva text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Rita en Ruta</h1>
+            <label>Höjd <input type="text"></label>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        // hitta elementet
+        const ritYta = document.querySelector('canvas');
+
+        // Ställer in storleken
+        ritYta.width = 800;
+        ritYta.height = 700;
+
+        //Slå på ritmotorn
+        var ctx = ritYta.getContext("2d");
+
+        // Stilar
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 100, 50, 50);
+
+        //Vi använder variablar
+        var x = 100;
+        var y = 200;
+        ctx.fillStyle = "pink";
+        ctx.fillRect(x, y, 50, 50)
+        x = 200;
+        ctx.fillRect(x, y, 50, 50)
+        y = 300;
+        ctx.fillRect(x, y, 50, 50)
+
+        //En rad med 3 blå fyrkanter på y 300
+        x = 300;
+        y = 300;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x, y, 50, 50)
+        x = 360;
+        ctx.fillRect(x, y, 50, 50)
+        x = 420;
+        ctx.fillRect(x, y, 50, 50)
+
+        //Var för bredd och höjd
+        var b = 75;
+        var h = 80;
+        //Ny rektangel
+        x = 480
+        ctx.fillRect(x, y, b, h)
+
+    </script>
+</body>
+</html>

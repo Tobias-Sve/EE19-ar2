@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skriva text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Rita en Ruta</h1>
+            <label>X värdet <input class="xVärde" type="range" min="0" max="800"></label>
+            <label>Y värdet <input class="yVärde" type="range" min="0" max="800"></label>
+            <label>Höjd <input class="höjd" type="range" min="0" max="800"></label>
+            <label>Bredd <input class="bredd" type="range" min="0" max="800"></label>
+            <label>Färg <input class="färg" type="color"></label>
+            <button onclick="fyrkant()" class="fyrkant">Generera</button> 
+            <button onclick="clear()" class="clear">Sudda ut</button>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        // hitta elementet
+        const ritYta = document.querySelector('canvas');
+        const xInput = document.querySelector(".xVärde");
+        const yInput = document.querySelector(".yVärde");
+        const höjdInput = document.querySelector(".höjd");
+        const breddInput = document.querySelector(".bredd");
+        const färgInput = document.querySelector(".färg");
+        const genKnapp = document.querySelector(".fyrkant");
+        const suddaKnapp = document.querySelector(".clear");
+
+        // Ställer in storleken
+        ritYta.width = 800;
+        ritYta.height = 800;
+
+        //Slå på ritmotorn
+        var ctx = ritYta.getContext("2d");
+
+        //Lyssna på generator knapp
+        genKnapp.addEventListener('click', function () {
+            //Variablar
+            var x = xInput.value;
+            var y = yInput.value;
+            var höjd = höjdInput.value;
+            var bredd = breddInput.value;
+
+            //Välj färgen
+            ctx.fillStyle = färgInput.value;
+
+            //Rita en fyrkant
+            ctx.fillRect(x, y, bredd, höjd);
+        })
+        //Lyssna på sudda knapp
+        suddaKnapp.addEventListener('click', function () {
+            ctx.clearRect(0, 0, 800, 800)
+        })
+
+    </script>
+</body>
+</html>

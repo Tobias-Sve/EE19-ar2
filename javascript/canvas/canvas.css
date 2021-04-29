@@ -1,8 +1,48 @@
 body {
-    background: #000;
+    background: rgb(0,112,255);
+background: linear-gradient(90deg, rgba(0,112,255,1) 0%, rgba(255,0,0,1) 100%);
 }
 canvas {
     background: #fff;
     margin: auto;
     display: block;
+}
+.kontainer {
+    background: rgba(209, 210, 255, 0.753);
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+}
+.sidebar {
+    margin-right: 20px;
+}
+label {
+    font-family: Orelega One;
+    color: #555555;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0;
+    padding: 0;
+}
+input, textarea {
+    padding: 0.5em;
+    margin-top: -0.4em;
+    font-style: italic;
+    border-radius: 0.3em;
+    border: 2px solid #55a5d2;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    height: 10em;
+}
+button {
+    margin: 1em 0;
+    padding: 0.7em;
+    border-radius: 0.3em;
+    border: none;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #55a5d2;
 }

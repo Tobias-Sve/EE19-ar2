@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skriva text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Rita en Ruta</h1>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        // hitta elementet
+        const ritYta = document.querySelector('canvas');
+
+        // Ställer in storleken
+        ritYta.width = 800;
+        ritYta.height = 700;
+
+        //Slå på ritmotorn
+        var ctx = ritYta.getContext("2d");
+
+        // Stilar
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 100, 50, 50);
+        ctx.strokeStyle = "green";
+        ctx.strokeRect(200, 200, 50, 50)
+
+        //SKriv text
+        ctx.font = "40px sans-serif"
+        ctx.strokeText("Canvas är kul!", 300, 100)
+        ctx.font = "50px Orelega One"
+        ctx.fillText("Tobias", 300, 150)
+
+    </script>
+</body>
+</html>
