@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rumsbokning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Boka Rum</h1>
+        <h2>Beställning</h2>
+        <label>Ange namn <input type="text" class="namn"></label>
+        <label>Antal nätter <input type="text" class="antal"></label>
+
+        <label>
+            Rumstyp 
+            <div>
+                <input type="radio" name="rumstyp" class="enkRum"> Enkelrum 800:- <br>
+                <input type="radio" name="rumstyp" class="dubRum"> Dubbelrum 1200:- <br>
+                <input type="radio" name="rumstyp" class="famRum"> Familjerum 1500:-
+            </div>
+        </label>
+        <label>
+            Tillägg 
+            <div>
+                <input type="checkbox" class="wifi"> Wifi 50:- <br>
+                <input type="checkbox" class="parkering"> Parkering 100:-
+            </div>
+        </label>
+
+        <button disabled>Räkna ut</button>
+
+        <h2>Uppskattad kostnad</h2>
+        <label>Total Pris <input type="text" class="total" disabled></label>
+    </div>
+
+    <script src="hotell2.js"></script>
+</body>
+</html>
